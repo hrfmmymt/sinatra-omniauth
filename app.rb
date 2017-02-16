@@ -8,9 +8,9 @@ require "omniauth"
 require "omniauth-facebook"
 
 class SinatraApp < Sinatra::Base
-  Dotenv.load
 
   configure do
+    Dotenv.load
     enable :sessions
 
     set :inline_templates, true
